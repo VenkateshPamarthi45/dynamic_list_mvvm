@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".items.view.IndicatorValueFragment">
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginTop="@dimen/dimen16"
+            android:layout_marginLeft="@dimen/dimen8"
+            android:layout_marginStart="@dimen/dimen8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/set_parameters_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen8"
+            android:text="@string/set_parameters"
+            android:layout_marginTop="@dimen/dimen16"
+            app:layout_constraintTop_toBottomOf="@+id/title_text_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="@dimen/dimen8"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/parameter_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen8"
+            android:text="@string/set_parameters"
+            android:layout_marginTop="@dimen/dimen16"
+            app:layout_constraintTop_toBottomOf="@+id/set_parameters_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="@dimen/dimen8"/>
+
+    <EditText
+            android:id="@+id/parameter_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/parameter_label"
+            android:layout_marginTop="@dimen/dimen16"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/set_parameters_label"
+            />
+</android.support.constraint.ConstraintLayout>
